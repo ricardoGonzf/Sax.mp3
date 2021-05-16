@@ -3,7 +3,7 @@ const client = new Discord.Client();
 
 client.on("ready", () => {
  console.log("Ready to play the sax!");
- client.user.setPresence({activity: {name: "s!play"}})
+ client.user.setPresence({activity: {name: "the sax"}})
 });
 
 client.on("message", async message => {
@@ -66,7 +66,7 @@ client.on("message", async message => {
   if(command == "invite") {
     const embed = new Discord.MessageEmbed()
       .setTitle("Invite - Sax.mp3")
-      .setDescription("Invite me [here](https://pog.rs/sax-bot)")
+      .setDescription("Invite me [here](http://bit.ly/sax-bot)")
       .setColor("FFD500")
 
     message.channel.send(embed);
